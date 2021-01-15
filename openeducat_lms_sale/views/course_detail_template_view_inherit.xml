@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="course" inherit_id="openeducat_lms.courses" name="Courses">
+        <xpath expr="//div[@id='course_category']" position="after">
+            <div class="mt24" style="border-bottom: 1px solid #e7e7e7;">
+                <h5 class="title">PRICE FILTER</h5>
+                <ul class="list-unstyled">
+                    <li class="pt8 pb8">
+                        <a class="category-menu__link category-menu__link--primary" href="/courses">All</a>
+                    </li>
+                    <li class="pt8 pb8">
+                        <a class="category-menu__link category-menu__link--primary" href="/courses/type/free">Free
+                            Course
+                        </a>
+                    </li>
+                    <li class="pt8 pb8">
+                        <a class="category-menu__link category-menu__link--primary" href="/courses/type/paid">Paid
+                            Course
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,31 @@
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+// Theme colors
+$o-theme-color-palettes: (
+    (
+        'alpha': #fdbb18,
+        'beta': #002147,
+        'gamma': #e8ebf2,
+        'delta': #333333,
+        'epsilon': #666666,
+    ),
+);
+
+// Colors
+$o-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-color-palettes: append($o-color-palettes, (
+        'body': #ffffff,
+        'menu': #f9f9f9,
+        'footer': #002147,
+        'text': #666666,
+        'h1': #002147,
+        'h2': #002147,
+        'h3': #002147,
+        'h4': #002147,
+        'h5': #002147,
+        'h6': #002147,
+    ));
+}
